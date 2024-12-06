@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>HTML Form</title>
+</head>
+<body>
+<!-- elemen-elemen yang ada di dalam form
+	input, textarea, select, button, label -->
+	<!-- value pada atribut type ada 7
+	text, password, radio, checkbox, submit, reset, button -->
+	<!-- untuk tag button value pada atributnya ada 3 yaitu 
+	sumbit reset dan button <button type=""></button> -->
+<form>
+<table border="1" cellspacing="0" cellpadding="5">
+    <tr>
+        <td align="center"><label for="username">username :</label></td>
+        <td><input type="text" id="username"></td>
+    </tr>
+    <tr>
+        <td align="center"><label for="password">password : </label></td>
+        <td><input type="password" id="password"></td>
+    </tr>
+    <tr>
+        <td align="center"><label for="jeniskelamin">Jenis Kelamin :</label></td>
+        <td>
+            <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+            <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+        </td>
+    </tr>
+    <!-- untuk melakukan pilihan lebih dari 1 gunakan checkbox -->
+    <tr>
+        <td align="center" colspan="2">
+            <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+            <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+            <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <label for="combobox">Tempat tinggal : </label>
+        </td>
+        <td>
+            <select id="combobox">
+                <option>Bandung</option>
+                <option>Yogyakarta</option>
+                <option>Jakarta</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><label for="Alamat">Alamat : </label></td>
+    <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2">
+        <button type="submit">Kirim</button>    
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
